@@ -1,0 +1,14 @@
+remote_theme: ddc-java/ddc-day
+repository_links:
+  enabled: false
+page_navigator:
+  enabled: false
+titles_from_headings:
+  enabled: false
+
+# Modify the contents below for the specific project.
+
+title: "Wake the F up!!"
+description: "Get the help waking up and have a productive day!"
+author:
+  name: "Ricky Garcia"
