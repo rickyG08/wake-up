@@ -1,6 +1,6 @@
 ## Summary
 
-"Wake the F up!!" helps the user function better after very little sleep. Helping to focus and be productive for work, school or other important things you have going on. This app helps you get through the day to make sure you are productive and ready to go. Users can select differnet tasks, activites and options that can be personalized to ensure an optimal experience. 
+"Wake the F up!!" help s the user function better after very little sleep. Helping to focus and be productive for work, school or other important things you have going on. This app helps you get through the day to make sure you are productive and ready to go. Users can select differnet tasks, activites and options that can be personalized to ensure an optimal experience. 
 
 ## Intended users
 
