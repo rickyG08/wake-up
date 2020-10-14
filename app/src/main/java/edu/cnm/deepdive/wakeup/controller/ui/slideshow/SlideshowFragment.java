@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.wakeup.ui.slideshow;
+package edu.cnm.deepdive.wakeup.controller.ui.slideshow;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
