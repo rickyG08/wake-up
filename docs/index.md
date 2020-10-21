@@ -1,10 +1,17 @@
 ## Summary
 
-"WakeUp" helps the user function better after very little sleep. Helping to focus and be productive for work, school or other important 
-things you have going on. This app helps you get through the day to make sure you are productive and ready to go. Users can select
- differnet tasks, activites and options that can be personalized to ensure an optimal experience. 
+"Wake the F up!!" helps the user function better after very little sleep. Helping you to focus and be productive for work, school or other important things you have going on. This app helps you get through the day to make sure you are productive and ready to go for anything you have going on. Throughout the day it can notify you with a little motivation to give you that extra push. When using the app users can select different tasks, activites and options that can be  personalized to ensure the best type of help to get you through the day. 
+ 
+* Select different activites that will notify the user wake up such as 
+ 
+	* Stretching
+	
+	* Deep breathing
+	
+	* Going on walks
+	
+* Add tasks that you need to accomplish during the day.
 
-When using WakeUp, users are able to 
 
 ## Intended users
 
@@ -26,7 +33,7 @@ When using WakeUp, users are able to
 
 ## Functionality
 
-* Be able to select different activites that help will help you wake up.
+* Be able to select different activites that help will help you wake up which the app can remind you to do through your day.
 
 	* Go on walks or for a run.
 	
@@ -44,7 +51,7 @@ When using WakeUp, users are able to
 	
 * Make lists to see what you need to get done for the day.
 	 
-	 * Access calender as well to see what you have going on.
+	 * Access calendar as well to see what you have going on.
 
 ## Persistent data
 
@@ -58,19 +65,23 @@ When using WakeUp, users are able to
 
 ## Device/external services
 
-* [Google](https://developers.google.com/calendar "Google Calender") Google Calender will help users see what they 
-have going in their day in order to help them complete their daily to-do list. Lets them add tasks for the day or for a future date. The Google Calender API is not needed for the app to function but it benefits from it.
+* [Google Calendar](https://developers.google.com/calendar "Google Calendar") 
 
-* [Google](https://developers.google.com/identity/sign-in/android/sign-in "Google Sign-in") Google Sign-in allows the user to sign-in from other devices to access their saved data and prefrences. Google Sign-in is not required to use the app and the app can function without it.
+	* Google Calendar will help users see what they have going in their day in order to help them complete their daily to-do list. Lets them add tasks for the day or for a future date. The Google Calendar API is not needed for the app to function but it benefits from it.
 
-* [OpenWeatherApp](https://rapidapi.com/community/api/open-weather-map "OpenWeatherApp") The OpenWeatherApp gives users the 
-current weather to help the user decide whether or not to go outside to take a walk or go for a run.
+* [Google Sign-in](https://developers.google.com/identity/sign-in/android/sign-in "Google Sign-in") 
+	
+	* Google Sign-in allows the user to sign-in from other devices to access their saved data and prefrences. Google Sign-in is not required to use the app and the app can function without it.
+
+* [OpenWeatherApp](https://rapidapi.com/community/api/open-weather-map "OpenWeatherApp") 
+
+	* The OpenWeatherApp gives users the current weather to help the user decide whether or not to go outside to take a walk or go for a run. The app can function without it.
 
 ## Stretch goals/possible enhancements 
 
 1. Recommend personalized activites.
 
-2. Use calender to let users see what they have planned for the day.
+2. Use calendar to let users see what they have planned for the day.
 
 3. Add simple games to get the brain going.
 
@@ -79,10 +90,6 @@ current weather to help the user decide whether or not to go outside to take a w
 5. Check the an estimate of sleep-time you got the night before and examine/ assess the ammount and quality of sleep.
 
 
-## Wireframe
+## [Wireframe diagram](wireframe.md)
 
-* [Wireframe diagram](wireframe.md)
-
-## ERD
-
-* [ERD diagram](erd.md)
+## [Entity-relationship Diagram](erd.md)
