@@ -1,6 +1,10 @@
 ## Summary
 
-"Wake the F up!!" help s the user function better after very little sleep. Helping to focus and be productive for work, school or other important things you have going on. This app helps you get through the day to make sure you are productive and ready to go. Users can select differnet tasks, activites and options that can be personalized to ensure an optimal experience. 
+"WakeUp" helps the user function better after very little sleep. Helping to focus and be productive for work, school or other important 
+things you have going on. This app helps you get through the day to make sure you are productive and ready to go. Users can select
+ differnet tasks, activites and options that can be personalized to ensure an optimal experience. 
+
+When using WakeUp, users are able to 
 
 ## Intended users
 
@@ -54,11 +58,13 @@
 
 ## Device/external services
 
-* [Google](https://developers.google.com/calendar "Google calender") 
+* [Google](https://developers.google.com/calendar "Google Calender") Google Calender will help users see what they 
+have going in their day in order to help them complete their daily to-do list. Lets them add tasks for the day or for a future date. The Google Calender API is not needed for the app to function but it benefits from it.
 
-* [Google](https://developers.google.com/identity/sign-in/android/sign-in "Google Sign-in")
+* [Google](https://developers.google.com/identity/sign-in/android/sign-in "Google Sign-in") Google Sign-in allows the user to sign-in from other devices to access their saved data and prefrences. Google Sign-in is not required to use the app and the app can function without it.
 
-* [OpenWeatherApp](https://rapidapi.com/community/api/open-weather-map "OpenWeatherApp")
+* [OpenWeatherApp](https://rapidapi.com/community/api/open-weather-map "OpenWeatherApp") The OpenWeatherApp gives users the 
+current weather to help the user decide whether or not to go outside to take a walk or go for a run.
 
 ## Stretch goals/possible enhancements 
 
@@ -75,4 +81,8 @@
 
 ## Wireframe
 
-![Wireframe diagram](img/wireframe.png)
+* [Wireframe diagram](wireframe.md)
+
+## ERD
+
+* [ERD diagram](erd.md)
