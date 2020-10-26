@@ -5,6 +5,7 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
+import java.util.Date;
 
 @Entity
 public class Todo {
@@ -14,12 +15,16 @@ public class Todo {
   @ColumnInfo(name = "todoId")
   private int id;
 
-  @ForeignKey()
-  private Long userId;
+  @ForeignKey(entity = User userId, parentColumns = {}, childColumns = {})
+  private Long id;
 
-  private int dateTime;
+  @NonNull
+  private Date created;
+
+  @NonNull
+  private Date calendarDate;
 
 
-
-
+  public Todo() {
+  }
 }

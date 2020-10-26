@@ -3,6 +3,7 @@ package edu.cnm.deepdive.wakeup.model.entity;
 import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 
 @Entity
@@ -11,24 +12,21 @@ public class Motivator {
   @PrimaryKey(autoGenerate = true)
   @NonNull
   @ColumnInfo(name = "motivatorId")
-  private int id;
+  private int motivatorId;
 
   private String activity;
 
-  private int userId;
+  @ForeignKey(entity = Class<User>)
+  private Long userId;
 
-  public Motivator(String name, int userId) {
-    this.id = id;
+  public Motivator(String name, Long userId) {
+    this.motivatorId = motivatorId;
     this.activity = activity;
     this.userId = userId;
   }
 
   public int getId() {
-    return id;
-  }
-
-  public void setId(int id) {
-    this.id = id;
+    return motivatorId;
   }
 
   public String getActivity() {
@@ -39,12 +37,5 @@ public class Motivator {
     this.activity = activity;
   }
 
-  public int getUserId() {
-    return userId;
-  }
-
-  public void setUserId(int userId) {
-    this.userId = userId;
-  }
 
 }

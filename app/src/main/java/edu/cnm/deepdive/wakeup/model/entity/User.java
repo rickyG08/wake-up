@@ -11,6 +11,15 @@ public class User {
   @PrimaryKey
   @NonNull
   @ColumnInfo(name = "userId")
-  private int id;
+  private Long id;
+
+  public User(String name, Long userId) {
+   this.id = id;
+  }
+
+  @NonNull
+  public Long getId() {
+    return id;
+  }
 
 }
