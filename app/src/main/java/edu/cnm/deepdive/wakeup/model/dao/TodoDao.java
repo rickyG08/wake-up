@@ -1,6 +1,7 @@
 package edu.cnm.deepdive.wakeup.model.dao;
 
 import androidx.room.Dao;
+import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Update;
 import edu.cnm.deepdive.wakeup.model.entity.Todo;
@@ -19,6 +20,15 @@ public interface TodoDao {
 
   @Insert
   Single<List<Long>> insert(Collection<Todo> todos);
+
+//  @Delete
+ // Single<Boolean> delete(Todo todo);
+
+// @Delete
+ // Single<List<Boolean>> delete(Todo... todos);
+
+//  @Delete
+//  Single<List<Boolean>> delete(Collection<Todo> todos);
 
   @Update
   Single<Boolean> update(Todo todo);

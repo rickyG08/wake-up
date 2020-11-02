@@ -35,6 +35,7 @@ public class Todo {
   private long userId;
 
   @NonNull
+  @ColumnInfo(index = true)
   private Date created;
 
   @NonNull
