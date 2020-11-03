@@ -21,21 +21,21 @@ public interface TodoDao {
   @Insert
   Single<List<Long>> insert(Collection<Todo> todos);
 
-//  @Delete
- // Single<Boolean> delete(Todo todo);
+  @Delete
+  Single<Integer> delete(Todo todo);
 
-// @Delete
- // Single<List<Boolean>> delete(Todo... todos);
+ @Delete
+ Single<Integer> delete(Todo... todos);
 
-//  @Delete
-//  Single<List<Boolean>> delete(Collection<Todo> todos);
-
-  @Update
-  Single<Boolean> update(Todo todo);
+ @Delete
+ Single<Integer> delete(Collection<Todo> todos);
 
   @Update
-  Single<List<Boolean>> update(Todo... todos);
+  Single<Integer> update(Todo todo);
 
   @Update
-  Single<List<Boolean>> update(Collection<Todo> todos);
+  Single<Integer> update(Todo... todos);
+
+  @Update
+  Single<Integer> update(Collection<Todo> todos);
 }

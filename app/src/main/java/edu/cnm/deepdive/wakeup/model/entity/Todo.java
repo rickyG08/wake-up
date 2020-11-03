@@ -31,7 +31,7 @@ public class Todo {
   private boolean todo;
 
   @NonNull
-  @ColumnInfo(index = true)
+  @ColumnInfo(name = "user_id", index = true)
   private long userId;
 
   @NonNull

@@ -27,22 +27,22 @@ public class Motivator {
   @PrimaryKey(autoGenerate = true)
   @NonNull
   @ColumnInfo(name = "motivator_id")
-  private int motivatorId;
+  private int id;
 
   @NonNull
-  @ColumnInfo(index = true)
+  @ColumnInfo
   private String activity;
 
   @NonNull
-  @ColumnInfo(name = "user_id")
+  @ColumnInfo(name = "user_id", index = true)
   private long userId;
 
-  public int getMotivatorId() {
-    return motivatorId;
+  public int getId() {
+    return id;
   }
 
-  public void setMotivatorId(int motivatorId) {
-    this.motivatorId = motivatorId;
+  public void setId(int id) {
+    this.id = id;
   }
 
   @NonNull

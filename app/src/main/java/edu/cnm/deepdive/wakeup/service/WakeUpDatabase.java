@@ -5,14 +5,17 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.room.TypeConverter;
+import androidx.room.TypeConverters;
 import edu.cnm.deepdive.wakeup.model.dao.MotivatorDao;
 import edu.cnm.deepdive.wakeup.model.dao.TodoDao;
 import edu.cnm.deepdive.wakeup.model.entity.Motivator;
 import edu.cnm.deepdive.wakeup.model.entity.Todo;
 import edu.cnm.deepdive.wakeup.model.entity.User;
+import edu.cnm.deepdive.wakeup.service.WakeUpDatabase.Converters;
 import java.util.Date;
 
-@Database(entities = {Todo.class, User.class, Motivator.class}, version = 1, exportSchema = true)
+@Database(entities = {Todo.class, User.class, Motivator.class}, version = 1)
+@TypeConverters({Converters.class})
 public abstract class WakeUpDatabase extends RoomDatabase {
 
   private static final String DB_NAME = "wakeup_db";
