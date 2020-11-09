@@ -8,6 +8,7 @@ import androidx.room.TypeConverter;
 import androidx.room.TypeConverters;
 import edu.cnm.deepdive.wakeup.model.dao.MotivatorDao;
 import edu.cnm.deepdive.wakeup.model.dao.TodoDao;
+import edu.cnm.deepdive.wakeup.model.dao.UserDao;
 import edu.cnm.deepdive.wakeup.model.entity.Motivator;
 import edu.cnm.deepdive.wakeup.model.entity.Todo;
 import edu.cnm.deepdive.wakeup.model.entity.User;
@@ -33,6 +34,8 @@ public abstract class WakeUpDatabase extends RoomDatabase {
   public abstract MotivatorDao getMotivatorDao();
 
   public abstract TodoDao getTodoDao();
+
+  public abstract UserDao getUserDao();
 
   private static class InstanceHolder {
 

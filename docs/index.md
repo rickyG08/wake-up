@@ -1,15 +1,15 @@
 ## Summary
 
-"Wake the F up!!" helps the user function better after very little sleep. Helping you to focus and be productive for work, school or other important things you have going on. This app helps you get through the day to make sure you are productive and ready to go for anything you have going on. Throughout the day it can notify you with a little motivation to give you that extra push. When using the app users can select different tasks, activites and options that can be  personalized to ensure the best type of help to get you through the day. 
- 
-* Select different activites that will notify the user wake up such as 
- 
+"Wake the F up!!" helps the user function better after very little sleep. Helping you to focus and be productive for work, school or other important things you have going on. This app helps you get through the day to make sure you are productive and ready to go for anything you have going on. Throughout the day it can notify you with a little motivation to give you that extra push. When using the app users can select different tasks, activities and options that can be  personalized to ensure the best type of help to get you through the day.
+
+* Select different activities that will notify the user wake up such as
+
 	* Stretching
-	
+
 	* Deep breathing
-	
+
 	* Going on walks
-	
+
 * Add tasks that you need to accomplish during the day.
 
 
@@ -17,11 +17,11 @@
 
 * People who don't get much sleep.
 
-    > As someone who works all day then comes home take care of my family, I have little or no time to relax or get enough sleep. This app helps me stay focused and motivated to make it through the day.
+    > As someone who works all day then comes home take care of my family, I have little or no time to relax or get enough sleep. This app helps me stay focused and motivated by sending me notifications to make it through the day.
 
 * Graveyard shift workers.
 
-	> As someone who works night shifts, I needed help getting going in the mornings. I had no motivation to get things done around the house and was tired all day. After using the app I feel better than I have before, ready to get things done. 
+	> As someone who works night shifts, I needed help getting going in the mornings. I had no motivation to get things done around the house and was tired all day. After using the app I feel better than I have before, ready to get things done.
 
 * People who are constantly tired and have a hard time focusing in the morning.
 
@@ -33,61 +33,61 @@
 
 ## Functionality
 
-* Be able to select different activites that help will help you wake up which the app can remind you to do through your day.
+* Be able to select different activities that help will help you wake up which the app can remind you to do through your day.
 
 	* Go on walks or for a run.
-	
+
 	* Stretching
-	
+
 	* Meditate/ deep breathing.
-	
+
 	* App gives you reminders and tips throughout the day.
 
 		* ("Hey! Have you drink enough water today?")
-	
+
 		* ("It looks pretty nice outside, should we go for a walk?")
-	
+
 		* ("Did you eat a well rounded breakfast?")
-	
+
 * Make lists to see what you need to get done for the day.
-	 
+
 	 * Access calendar as well to see what you have going on.
 
 ## Persistent data
 
-* Ablity to see options and settings that have been selected on what type of help you are needing.
+* Ability to see options and settings that have been selected on what type of help you are needing.
 
 	* Level of exhaustion.
-	
+
 	* Notifications for tips such as, recommending drinking water, going on walks, reminder of tasks for the day.
 
 * Have to-do list data on device
 
 ## Device/external services
 
-* [Google Calendar](https://developers.google.com/calendar "Google Calendar") 
+* [Google Calendar](https://developers.google.com/calendar "Google Calendar")
 
 	* Google Calendar will help users see what they have going in their day in order to help them complete their daily to-do list. Lets them add tasks for the day or for a future date. The Google Calendar API is not needed for the app to function but it benefits from it.
 
-* [Google Sign-in](https://developers.google.com/identity/sign-in/android/sign-in "Google Sign-in") 
-	
+* [Google Sign-in](https://developers.google.com/identity/sign-in/android/sign-in "Google Sign-in")
+
 	* Google Sign-in allows the user to sign-in from other devices to access their saved data and prefrences. Google Sign-in is not required to use the app and the app can function without it.
 
-* [OpenWeatherApp](https://rapidapi.com/community/api/open-weather-map "OpenWeatherApp") 
+* [OpenWeatherApp](https://rapidapi.com/community/api/open-weather-map "OpenWeatherApp")
 
 	* The OpenWeatherApp gives users the current weather to help the user decide whether or not to go outside to take a walk or go for a run. The app can function without it.
 
-## Stretch goals/possible enhancements 
+## Stretch goals/possible enhancements
 
-1. Recommend personalized activites.
+1. Recommend personalized activities.
 
 2. Use calendar to let users see what they have planned for the day.
 
 3. Add simple games to get the brain going.
 
-4. Extend functions to also help to improve your sleep. 
+4. Extend functions to also help to improve your sleep.
 
-5. Check the an estimate of sleep-time you got the night before and examine/ assess the ammount and quality of sleep.
+5. Check the an estimate of sleep-time you got the night before and examine/ assess the amount and quality of sleep.
 
 
 ## [Wireframe diagram](wireframe.md)

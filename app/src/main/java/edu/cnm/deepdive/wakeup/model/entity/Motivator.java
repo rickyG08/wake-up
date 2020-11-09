@@ -36,6 +36,11 @@ public class Motivator {
   @NonNull
   @ColumnInfo(name = "user_id", index = true)
   private long userId;
+  
+  // TODO do i need to index this? also do setter and getter.
+  @NonNull
+  @ColumnInfo(index = true)
+  private String motivator;
 
   public int getId() {
     return id;
@@ -60,6 +65,15 @@ public class Motivator {
 
   public void setUserId(long userId) {
     this.userId = userId;
+  }
+
+  @NonNull
+  public String getMotivator() {
+    return motivator;
+  }
+
+  public void setMotivator(@NonNull String motivator) {
+    this.motivator = motivator;
   }
 
 }
