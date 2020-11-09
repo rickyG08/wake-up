@@ -17,18 +17,18 @@ public class User {
 
   @PrimaryKey(autoGenerate = true)
   @ColumnInfo(name = "user_id")
-  private long id;
+  private long userId;
 
   @NonNull
   @ColumnInfo(name = "oauth_key")
   private String oauthKey;
 
   public long getId() {
-    return id;
+    return userId;
   }
 
   public void setId(long id) {
-    this.id = id;
+    this.userId = id;
   }
 
   @NonNull

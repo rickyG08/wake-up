@@ -37,7 +37,7 @@ public class Todo {
   private long userId;
 
   @NonNull
-  private Date created;
+  private Date created = new Date();
 
   @NonNull
   @ColumnInfo(name = "calendar_date")

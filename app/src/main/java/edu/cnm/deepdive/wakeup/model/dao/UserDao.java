@@ -8,8 +8,6 @@ import androidx.room.Query;
 import androidx.room.Update;
 import edu.cnm.deepdive.wakeup.model.entity.User;
 import io.reactivex.Single;
-import java.util.Collection;
-import java.util.List;
 
 @Dao
 public interface UserDao {
@@ -24,8 +22,8 @@ public interface UserDao {
   Single<Integer> delete(User... users);
 
   @Query("SELECT * FROM user_profile WHERE user_id = :userId")
-  LiveData<User> selectById(long userId);
+  LiveData<User> getById(long userId);
 
   @Query("SELECT * FROM user_profile WHERE oauth_key = :oauthKey")
-  Single<User> selectByOauthKey(String oauthKey);
+  Single<User> getUserByOauthKey(String oauthKey);
 }

@@ -7,6 +7,7 @@ import androidx.room.ForeignKey;
 import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
+@SuppressWarnings("NotNullFieldNotInitialized")
 @Entity(
     indices = {
       @Index(value = {"activity"}, unique = true),
