@@ -15,15 +15,7 @@ CREATE INDEX IF NOT EXISTS `index_Todo_task_task_name_user_id_created_calendar_d
                                                                                                 `created`,
                                                                                                 `calendar_date`);
 
-CREATE INDEX IF NOT EXISTS `index_Todo_task` ON `Todo` (`task`);
-
-CREATE INDEX IF NOT EXISTS `index_Todo_task_name` ON `Todo` (`task_name`);
-
 CREATE INDEX IF NOT EXISTS `index_Todo_user_id` ON `Todo` (`user_id`);
-
-CREATE INDEX IF NOT EXISTS `index_Todo_created` ON `Todo` (`created`);
-
-CREATE INDEX IF NOT EXISTS `index_Todo_calendar_date` ON `Todo` (`calendar_date`);
 
 CREATE TABLE IF NOT EXISTS `user_profile`
 (
