@@ -7,6 +7,8 @@ import java.util.List;
 public class UserWithMotivators extends User {
 
 
+
+
   private List<Motivator> motivators;
 
 

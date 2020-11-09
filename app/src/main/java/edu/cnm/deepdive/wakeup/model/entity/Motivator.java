@@ -7,10 +7,10 @@ import androidx.room.ForeignKey;
 import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
-@SuppressWarnings("ALL")
 @Entity(
     indices = {
-      @Index(value = {"activity"}, unique = true)
+      @Index(value = {"activity"}, unique = true),
+      @Index({"user_id", "motivator"})
     },
     foreignKeys = {
     @ForeignKey(
@@ -23,31 +23,26 @@ import androidx.room.PrimaryKey;
 )
 public class Motivator {
 
-  @SuppressWarnings("NullableProblems")
   @PrimaryKey(autoGenerate = true)
-  @NonNull
   @ColumnInfo(name = "motivator_id")
-  private int id;
+  private long motivatorId;
 
   @NonNull
   @ColumnInfo
   private String activity;
 
-  @NonNull
-  @ColumnInfo(name = "user_id", index = true)
+  @ColumnInfo(name = "user_id")
   private long userId;
-  
-  // TODO do i need to index this? also do setter and getter.
+
   @NonNull
-  @ColumnInfo(index = true)
   private String motivator;
 
-  public int getId() {
-    return id;
+  public long getMotivatorId() {
+    return motivatorId;
   }
 
-  public void setId(int id) {
-    this.id = id;
+  public void setMotivatorId(long motivatorId) {
+    this.motivatorId = motivatorId;
   }
 
   @NonNull

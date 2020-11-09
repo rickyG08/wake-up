@@ -23,6 +23,9 @@ public interface UserDao {
   @Delete
   Single<Integer> delete(User... users);
 
-  @Query("SELECT * FROM User WHERE user_id = :userId")
+  @Query("SELECT * FROM user_profile WHERE user_id = :userId")
   LiveData<User> selectById(long userId);
+
+  @Query("SELECT * FROM user_profile WHERE oauth_key = :oauthKey")
+  Single<User> selectByOauthKey(String oauthKey);
 }

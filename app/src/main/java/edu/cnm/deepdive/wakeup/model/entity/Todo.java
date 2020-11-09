@@ -4,11 +4,14 @@ import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
+import androidx.room.Index;
 import androidx.room.PrimaryKey;
 import java.util.Date;
 
-@SuppressWarnings({"NullableProblems", "NotNullFieldNotInitialized"})
 @Entity(
+    indices = {
+        @Index({"task", "task_name", "user_id", "created", "calendar_date"})
+    },
     foreignKeys = {
         @ForeignKey(
             entity = User.class,
@@ -22,40 +25,46 @@ import java.util.Date;
 public class Todo {
 
   @PrimaryKey(autoGenerate = true)
-  @NonNull
   @ColumnInfo(name = "todo_id")
-  private int id;
+  private long todoId;
 
-  @NonNull
-  @ColumnInfo(index = true)
-  private boolean todo;
+  private boolean task;
 
-  @NonNull
+  @ColumnInfo(name = "task_name")
+  private String taskName;
+
   @ColumnInfo(name = "user_id", index = true)
   private long userId;
 
   @NonNull
-  @ColumnInfo(index = true)
   private Date created;
 
   @NonNull
-  @ColumnInfo(name = "calendar_date", index = true)
+  @ColumnInfo(name = "calendar_date")
   private Date calendarDate;
 
-  public int getId() {
-    return id;
+  public long getTodoId() {
+    return todoId;
   }
 
-  public void setId(int id) {
-    this.id = id;
+  public void setTodoId(long todoId) {
+    this.todoId = todoId;
   }
 
-  public boolean isTodo() {
-    return todo;
+  public boolean isTask() {
+    return task;
   }
 
-  public void setTodo(boolean todo) {
-    this.todo = todo;
+  public void setTask(boolean task) {
+    this.task = task;
+  }
+
+  public String getTaskName() {
+    return taskName;
+  }
+
+  public void setTaskName(String taskName) {
+    this.taskName = taskName;
   }
 
   public long getUserId() {
