@@ -26,4 +26,5 @@ public interface UserDao {
 
   @Query("SELECT * FROM user_profile WHERE oauth_key = :oauthKey")
   Single<User> getUserByOauthKey(String oauthKey);
+
 }

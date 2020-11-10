@@ -10,17 +10,17 @@ import androidx.room.PrimaryKey;
 @SuppressWarnings("NotNullFieldNotInitialized")
 @Entity(
     indices = {
-      @Index(value = {"activity"}, unique = true),
-      @Index({"user_id", "motivator"})
+        @Index(value = {"activity"}, unique = true),
+        @Index({"user_id", "motivator"})
     },
     foreignKeys = {
-    @ForeignKey(
-        entity = User.class,
-        parentColumns = "user_id",
-        childColumns = "user_id",
-        onDelete = ForeignKey.CASCADE
-    )
-  }
+        @ForeignKey(
+            entity = User.class,
+            parentColumns = "user_id",
+            childColumns = "user_id",
+            onDelete = ForeignKey.CASCADE
+        )
+    }
 )
 public class Motivator {
 

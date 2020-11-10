@@ -27,8 +27,9 @@ public class MotivatorRepository {
         : motivatorDao.update(motivator)
             .ignoreElement();
   }
-  public Completable delete(Motivator motivator){
-    return (motivator.getMotivatorId() == 0)?
+
+  public Completable delete(Motivator motivator) {
+    return (motivator.getMotivatorId() == 0) ?
         Completable.complete()
         : motivatorDao.delete(motivator)
             .ignoreElement();

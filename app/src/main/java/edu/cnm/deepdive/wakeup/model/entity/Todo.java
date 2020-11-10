@@ -92,4 +92,5 @@ public class Todo {
   public void setCalendarDate(@NonNull Date calendarDate) {
     this.calendarDate = calendarDate;
   }
+
 }

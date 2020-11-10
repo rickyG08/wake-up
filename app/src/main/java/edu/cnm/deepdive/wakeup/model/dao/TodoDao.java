@@ -26,11 +26,11 @@ public interface TodoDao {
   @Delete
   Single<Integer> delete(Todo todo);
 
- @Delete
- Single<Integer> delete(Todo... todos);
+  @Delete
+  Single<Integer> delete(Todo... todos);
 
- @Delete
- Single<Integer> delete(Collection<Todo> todos);
+  @Delete
+  Single<Integer> delete(Collection<Todo> todos);
 
   @Update
   Single<Integer> update(Todo todo);
@@ -49,4 +49,5 @@ public interface TodoDao {
 
   @Query("SELECT * FROM Todo WHERE task_name = :taskName")
   LiveData<List<Todo>> getAll(String taskName);
+
 }

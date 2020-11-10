@@ -27,8 +27,9 @@ public class TodoRepository {
         : todoDao.update(todo)
             .ignoreElement();
   }
-  public Completable delete(Todo todo){
-    return (todo.getTodoId() == 0)?
+
+  public Completable delete(Todo todo) {
+    return (todo.getTodoId() == 0) ?
         Completable.complete()
         : todoDao.delete(todo)
             .ignoreElement();
