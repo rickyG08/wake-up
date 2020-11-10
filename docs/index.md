@@ -77,11 +77,11 @@
 
 	* The OpenWeatherApp gives users the current weather to help the user decide whether or not to go outside to take a walk or go for a run. The app can function without it.
 
-## [Database class](database.md "Database")
+## [Database class](database.md)
 
-## [Entity classes](entity-classes.md "Entities")
+## [Entity classes](entity-classes.md)
 
-## [DAO interfaces](dao-interfaces.md "DAOs")
+## [DAO interfaces](dao-interfaces.md)
 
 ## [Repository classes](repository-classes.md)
 
