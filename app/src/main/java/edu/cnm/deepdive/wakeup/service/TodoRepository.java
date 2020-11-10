@@ -34,8 +34,16 @@ public class TodoRepository {
             .ignoreElement();
   }
 
+  public LiveData<Todo> selectTodo(long id) {
+    return todoDao.selectTodo(id);
+  }
+
+  public LiveData<List<Todo>> getAllTasksByDate() {
+    return todoDao.getAllTasksByDate();
+  }
+
   public LiveData<List<Todo>> getAll(String taskName) {
     return todoDao.getAll(taskName);
   }
-  // TODO get the tasks (update/delete)
+
 }
