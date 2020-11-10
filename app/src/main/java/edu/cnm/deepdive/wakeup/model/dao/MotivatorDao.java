@@ -45,6 +45,6 @@ public interface MotivatorDao {
   LiveData<Motivator> selectMotivator(long id);
 
   @Query("SELECT * FROM Motivator WHERE motivator = :name")
-  LiveData<Motivator> getMotivators(String name);
+  LiveData<List<Motivator>> getMotivators(String name);
 
 }

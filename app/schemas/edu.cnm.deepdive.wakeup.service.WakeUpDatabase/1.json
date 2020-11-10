@@ -92,7 +92,7 @@
         "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`user_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `oauth_key` TEXT NOT NULL)",
         "fields": [
           {
-            "fieldPath": "id",
+            "fieldPath": "userId",
             "columnName": "user_id",
             "affinity": "INTEGER",
             "notNull": true

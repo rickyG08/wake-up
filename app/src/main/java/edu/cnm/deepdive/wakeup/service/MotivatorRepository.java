@@ -33,7 +33,13 @@ public class MotivatorRepository {
         : motivatorDao.delete(motivator)
             .ignoreElement();
   }
-  public LiveData<Motivator> selectByName(String name) {
+
+  public LiveData<Motivator> selectMotivator(long id) {
+    return motivatorDao.selectMotivator(id);
+  }
+
+  public LiveData<List<Motivator>> getMotivators(String name) {
     return motivatorDao.getMotivators(name);
   }
+
 }

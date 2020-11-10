@@ -40,10 +40,8 @@ public class UserRepository {
     return userDao.getById(userId);
   }
 
-
   Single<User> getUserByOauthKey(String oauthKey) {
     return userDao.getUserByOauthKey(oauthKey);
   }
 
-  // TODO get users
 }
