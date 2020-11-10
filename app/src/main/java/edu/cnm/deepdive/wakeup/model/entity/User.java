@@ -23,12 +23,12 @@ public class User {
   @ColumnInfo(name = "oauth_key")
   private String oauthKey;
 
-  public long getId() {
+  public long getUserId() {
     return userId;
   }
 
-  public void setId(long id) {
-    this.userId = id;
+  public void setUserId(long userId) {
+    this.userId = userId;
   }
 
   @NonNull

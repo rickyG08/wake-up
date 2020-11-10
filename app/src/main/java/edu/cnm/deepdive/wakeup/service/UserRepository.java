@@ -21,16 +21,16 @@ public class UserRepository {
   }
 
   public Completable save(User user) {
-    return (user.getId() == 0)
+    return (user.getUserId() == 0)
         ? userDao.insert(user)
-        .doAfterSuccess(user::setId)
+        .doAfterSuccess(user::setUserId)
         .ignoreElement()
         : userDao.update(user)
             .ignoreElement();
   }
 
   public Completable delete(User user) {
-    return (user.getId() == 0)
+    return (user.getUserId() == 0)
         ? Completable.complete()
         : userDao.delete(user)
             .ignoreElement();

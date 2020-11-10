@@ -1,10 +1,12 @@
 package edu.cnm.deepdive.wakeup.service;
 
 import android.content.Context;
+import androidx.lifecycle.LiveData;
 import edu.cnm.deepdive.wakeup.model.dao.MotivatorDao;
 import edu.cnm.deepdive.wakeup.model.entity.Motivator;
 import edu.cnm.deepdive.wakeup.model.entity.Todo;
 import io.reactivex.Completable;
+import java.util.List;
 
 public class MotivatorRepository {
 
@@ -31,5 +33,7 @@ public class MotivatorRepository {
         : motivatorDao.delete(motivator)
             .ignoreElement();
   }
-
+  public LiveData<Motivator> selectByName(String name) {
+    return motivatorDao.getMotivators(name);
+  }
 }

@@ -1,9 +1,11 @@
 package edu.cnm.deepdive.wakeup.service;
 
 import android.content.Context;
+import androidx.lifecycle.LiveData;
 import edu.cnm.deepdive.wakeup.model.dao.TodoDao;
 import edu.cnm.deepdive.wakeup.model.entity.Todo;
 import io.reactivex.Completable;
+import java.util.List;
 
 public class TodoRepository {
 
@@ -31,12 +33,9 @@ public class TodoRepository {
         : todoDao.delete(todo)
             .ignoreElement();
   }
-//  public LiveData<List<AutoReplyWithUserType>> getAutoRepliesByUserType(long userTypeId){
-//    return autoReplyDao.getAutoRepliesWithUserType(userTypeId);
-//  }
-//  public LiveData<List<AutoReplyWithUserType>> getAllAutoReplies(){
-//    return  autoReplyDao.getAllAutoReplies();
-//  }
 
+  public LiveData<List<Todo>> getAll(String taskName) {
+    return todoDao.getAll(taskName);
+  }
   // TODO get the tasks (update/delete)
 }
