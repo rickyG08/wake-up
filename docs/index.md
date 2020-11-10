@@ -12,33 +12,26 @@
 
 * Add tasks that you need to accomplish during the day.
 
-
 ## [Intended users](intended-users.md "Intended users")
 
 ## [Functionality](functionality.md "Functionality")
 
-## Persistent data
-
-* Ability to see options and settings that have been selected on what type of help you are needing.
-
-	* Level of exhaustion.
-
-	* Notifications for tips such as, recommending drinking water, going on walks, reminder of tasks for the day.
-
-* Have to-do list data on device
+## [Persistent data](persistent-data.md "Persistent data")
 
 ## [Device/external services](device-ext.md "Device/external services")
-
-## [Database class](database.md "Database class")
 
 ## [Entity classes](entity-classes.md "Entity classes")
 
 ## [DAO interfaces](dao-interfaces.md "DAO interfaces")
 
+## [Database class](database.md "Database class")
+
 ## [Repository classes](repository-classes.md "Repository classes")
+
+## [Data model data definition language (DDL)](ddl.md "DDL")
 
 ## [Wireframe diagram](wireframe.md "Wireframe diagram")
 
 ## [Entity-relationship Diagram](erd.md "ERD diagram")
 
-## [Stretch goals/possible enhancements](stretch-goals.md)
+## [Stretch goals/possible enhancements](stretch-goals.md "Stretch goals/possible enhancements")

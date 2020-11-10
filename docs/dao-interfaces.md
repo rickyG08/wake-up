@@ -1,4 +1,4 @@
-## [DAO interfaces](https://github.com/rickyG08/wake-up/tree/database/app/src/main/java/edu/cnm/deepdive/wakeup/model/dao)
+## [DAO interfaces](https://github.com/rickyG08/wake-up/tree/database/app/src/main/java/edu/cnm/deepdive/wakeup/model/dao "WakeUp DAOs")
 
 [Motivator DAO](https://github.com/rickyG08/wake-up/blob/database/app/src/main/java/edu/cnm/deepdive/wakeup/model/dao/MotivatorDao.java "Motivator DAO")
 
