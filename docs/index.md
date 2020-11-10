@@ -85,8 +85,8 @@
 
 ## [Repository classes](repository-classes.md)
 
-## [Wireframe diagram](wireframe.md "Wireframe")
+## [Wireframe diagram](wireframe.md)
 
-## [Entity-relationship Diagram](erd.md "ERD")
+## [Entity-relationship Diagram](erd.md)
 
-## [Stretch goals/possible enhancements](stretch-goals.md "Stretch goals")
+## [Stretch goals/possible enhancements](stretch-goals.md)
