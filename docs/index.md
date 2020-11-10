@@ -13,45 +13,9 @@
 * Add tasks that you need to accomplish during the day.
 
 
-## Intended users
+## [Intended users](intended-users.md "Intended users")
 
-* People who don't get much sleep.
-
-    > As someone who works all day then comes home take care of my family, I have little or no time to relax or get enough sleep. This app helps me stay focused and motivated by sending me notifications to make it through the day.
-
-* Graveyard shift workers.
-
-	> As someone who works night shifts, I needed help getting going in the mornings. I had no motivation to get things done around the house and was tired all day. After using the app I feel better than I have before, ready to get things done.
-
-* People who are constantly tired and have a hard time focusing in the morning.
-
-	> As someone who gets a good night's rest most days, I still feel tired in the morning. After using this app for a few weeks, I am energized for whatever the day has in store for me.
-
-* Anyone who wants to improve their well-being.
-
-	> As someone who enjoys taking care of my health, I wanted to maximize how efficient my mornings are. After using the app I have a more productive morning and it carries on throughout the day.
-
-## Functionality
-
-* Be able to select different activities that help will help you wake up which the app can remind you to do through your day.
-
-	* Go on walks or for a run.
-
-	* Stretching
-
-	* Meditate/ deep breathing.
-
-	* App gives you reminders and tips throughout the day.
-
-		* ("Hey! Have you drink enough water today?")
-
-		* ("It looks pretty nice outside, should we go for a walk?")
-
-		* ("Did you eat a well rounded breakfast?")
-
-* Make lists to see what you need to get done for the day.
-
-	 * Access calendar as well to see what you have going on.
+## [Functionality](functionality.md "Functionality")
 
 ## Persistent data
 
@@ -63,18 +27,18 @@
 
 * Have to-do list data on device
 
-## [Device/external services](device-ext.md)
+## [Device/external services](device-ext.md "Device/external services")
 
-## [Database class](database.md)
+## [Database class](database.md "Database class")
 
-## [Entity classes](entity-classes.md)
+## [Entity classes](entity-classes.md "Entity classes")
 
-## [DAO interfaces](dao-interfaces.md)
+## [DAO interfaces](dao-interfaces.md "DAO interfaces")
 
-## [Repository classes](repository-classes.md)
+## [Repository classes](repository-classes.md "Repository classes")
 
-## [Wireframe diagram](wireframe.md)
+## [Wireframe diagram](wireframe.md "Wireframe diagram")
 
-## [Entity-relationship Diagram](erd.md)
+## [Entity-relationship Diagram](erd.md "ERD diagram")
 
 ## [Stretch goals/possible enhancements](stretch-goals.md)
