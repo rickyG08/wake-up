@@ -28,7 +28,7 @@
 
 ## [Repository classes](repository-classes.md "Repository classes")
 
-## [Data model data definition language (DDL)](ddl.md "DDL")
+## [Data model data definition language (DDL)](ddl.md)
 
 ## [Wireframe diagram](wireframe.md "Wireframe diagram")
 

@@ -2,4 +2,4 @@
 
 ERD for "Wake the F up!!"
 
-[![ERD diagram](img/wakeup-erd.png)](pdf/wakeup-erd.pdf "ERD")
+[![ERD diagram](img/wakeup-erd.png)](pdf/wakeup-erd.pdf)
