@@ -43,6 +43,8 @@ public interface TodoDao {
 
   @Query("SELECT * FROM Todo WHERE todo_id = :id")
   LiveData<Todo> selectTodo(long id);
+  // getById
+
 
   @Query("SELECT * FROM Todo WHERE task ORDER BY calendar_date DESC")
   LiveData<List<Todo>> getAllTasksByDate();
