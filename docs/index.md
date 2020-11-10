@@ -25,7 +25,7 @@
 
 * People who are constantly tired and have a hard time focusing in the morning.
 
-	> As someone who gets a good night's rest most days, I still feel tired in the morning. After using this app for a few weeks, I am energized for whatever the day has in store for me. 
+	> As someone who gets a good night's rest most days, I still feel tired in the morning. After using this app for a few weeks, I am energized for whatever the day has in store for me.
 
 * Anyone who wants to improve their well-being.
 
@@ -71,25 +71,22 @@
 
 * [Google Sign-in](https://developers.google.com/identity/sign-in/android/sign-in "Google Sign-in")
 
-	* Google Sign-in allows the user to sign-in from other devices to access their saved data and prefrences. Google Sign-in is not required to use the app and the app can function without it.
+	* Google Sign-in allows the user to sign-in from other devices to access their saved data and preferences. Google Sign-in is not required to use the app and the app can function without it.
 
 * [OpenWeatherApp](https://rapidapi.com/community/api/open-weather-map "OpenWeatherApp")
 
 	* The OpenWeatherApp gives users the current weather to help the user decide whether or not to go outside to take a walk or go for a run. The app can function without it.
 
-## Stretch goals/possible enhancements
+## [Database class](database.md "Database")
 
-1. Recommend personalized activities.
+## [Entity classes](entity-classes.md "Entities")
 
-2. Use calendar to let users see what they have planned for the day.
+## [DAO interfaces](dao-interfaces.md "DAOs")
 
-3. Add simple games to get the brain going.
+## [Repository classes](repository-classes.md)
 
-4. Extend functions to also help to improve your sleep.
+## [Wireframe diagram](wireframe.md "Wireframe")
 
-5. Check the an estimate of sleep-time you got the night before and examine/ assess the amount and quality of sleep.
+## [Entity-relationship Diagram](erd.md "ERD")
 
-
-## [Wireframe diagram](wireframe.md)
-
-## [Entity-relationship Diagram](erd.md)
+## [Stretch goals/possible enhancements](stretch-goals.md "Stretch goals")
