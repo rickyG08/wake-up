@@ -12,26 +12,26 @@
 
 * Add tasks that you need to accomplish during the day.
 
-## [Intended users](docs/intended-users.md "Intended users")
+## [Intended users](work/intended-users.md "Intended users")
 
-## [Functionality](docs/functionality.md "Functionality")
+## [Functionality](work/functionality.md "Functionality")
 
-## [Persistent data](docs/persistent-data.md "Persistent data")
+## [Persistent data](work/persistent-data.md "Persistent data")
 
-## [Device/external services](docs/device-ext.md "Device/external services")
+## [Device/external services](work/device-ext.md "Device/external services")
 
-## [Entity classes](docs/entity-classes.md "Entity classes")
+## [Entity classes](work/entity-classes.md "Entity classes")
 
-## [DAO interfaces](docs/dao-interfaces.md "DAO interfaces")
+## [DAO interfaces](work/dao-interfaces.md "DAO interfaces")
 
-## [Database class](docs/database.md "Database class")
+## [Database class](work/database.md "Database class")
 
-## [Repository classes](docs/repository-classes.md "Repository classes")
+## [Repository classes](work/repository-classes.md "Repository classes")
 
-## [Data model data definition language (DDL)](docs/ddl.md "DDL")
+## [Data model data definition language (DDL)](dddl.md "DDL")
 
-## [Wireframe diagram](docs/wireframe.md "Wireframe diagram")
+## [Wireframe diagram](work/wireframe.md "Wireframe diagram")
 
-## [Entity-relationship Diagram](docs/erd.md "ERD diagram")
+## [Entity-relationship Diagram](work/erd.md "ERD diagram")
 
-## [Stretch goals/possible enhancements](docs/stretch-goals.md "Stretch goals/possible enhancements")
+## [Stretch goals/possible enhancements](work/stretch-goals.md "Stretch goals/possible enhancements")
