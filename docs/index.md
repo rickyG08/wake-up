@@ -12,13 +12,13 @@
 
 * Add tasks that you need to accomplish during the day.
 
-## [Intended users](work/intended-users.md "Intended users")
+## [Intended users](https://rickyg08.github.io/wake-up/work/intended-users.html "Intended users")
 
 ## [Functionality](work/functionality.md "Functionality")
 
 ## [Persistent data](work/persistent-data.md "Persistent data")
 
-## [Device/external services](work/device-ext.md "Device/external services")
+## [Device/external services](https://rickyg08.github.io/wake-up/work/device-ext.html "Device/external services")
 
 ## [Entity classes](work/entity-classes.md "Entity classes")
 
