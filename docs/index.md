@@ -14,24 +14,24 @@
 
 ## [Intended users](https://rickyg08.github.io/wake-up/work/intended-users.html "Intended users")
 
-## [Functionality](work/functionality.md "Functionality")
+## [Functionality](https://rickyg08.github.io/wake-up/work/functionality.html "Functionality")
 
-## [Persistent data](work/persistent-data.md "Persistent data")
+## [Persistent data](https://rickyg08.github.io/wake-up/work/persistent-data.html "Persistent data")
 
 ## [Device/external services](https://rickyg08.github.io/wake-up/work/device-ext.html "Device/external services")
 
-## [Entity classes](work/entity-classes.md "Entity classes")
+## [Entity classes](https://rickyg08.github.io/wake-up/work/entity-classes.html "Entity classes")
 
-## [DAO interfaces](work/dao-interfaces.md "DAO interfaces")
+## [DAO interfaces](https://rickyg08.github.io/wake-up/work/dao-interfaces.html "DAO interfaces")
 
-## [Database class](work/database.md "Database class")
+## [Database class](https://github.com/rickyG08/wake-up/blob/database/app/src/main/java/edu/cnm/deepdive/wakeup/service/WakeUpDatabase.java "Database class")
 
-## [Repository classes](work/repository-classes.md "Repository classes")
+## [Repository classes](https://rickyg08.github.io/wake-up/work/repository-classes.html "Repository classes")
 
-## [Data model data definition language (DDL)](dddl.md "DDL")
+## [Data model data definition language (DDL)](https://rickyg08.github.io/wake-up/ddl.html "DDL")
 
-## [Wireframe diagram](work/wireframe.md "Wireframe diagram")
+## [Wireframe diagram](https://rickyg08.github.io/wake-up/work/wireframe.html "Wireframe diagram")
 
-## [Entity-relationship Diagram](work/erd.md "ERD diagram")
+## [Entity-relationship Diagram](https://rickyg08.github.io/wake-up/work/erd.html "ERD diagram")
 
-## [Stretch goals/possible enhancements](work/stretch-goals.md "Stretch goals/possible enhancements")
+## [Stretch goals/possible enhancements](https://rickyg08.github.io/wake-up/work/stretch-goals.html "Stretch goals/possible enhancements")
