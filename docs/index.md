@@ -32,6 +32,6 @@
 
 ## [Wireframe diagram](https://rickyg08.github.io/wake-up/work/wireframe.html "Wireframe diagram")
 
-## [Entity-relationship Diagram](https://rickyg08.github.io/wake-up/work/erd.html "ERD diagram")
+## [Entity-relationship diagram](erd.md)
 
 ## [Stretch goals/possible enhancements](https://rickyg08.github.io/wake-up/work/stretch-goals.html "Stretch goals/possible enhancements")
