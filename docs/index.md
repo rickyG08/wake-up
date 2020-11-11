@@ -30,7 +30,7 @@
 
 ## [Data model data definition language (DDL)](https://rickyg08.github.io/wake-up/ddl.html "DDL")
 
-## [Wireframe diagram](https://rickyg08.github.io/wake-up/work/wireframe.html "Wireframe diagram")
+## [Wireframe diagram](work/wireframe.md "Wireframe diagram")
 
 ## [Entity-relationship diagram](erd.md)
 
