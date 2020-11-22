@@ -66,6 +66,9 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
 
+    // Google Sign-in dependency
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+
     // Stetho
     implementation 'com.facebook.stetho:stetho:1.5.1'
 

@@ -4,14 +4,16 @@
   package="edu.cnm.deepdive.wakeup">
 
   <application
-    android:name=".WakeUpApplication"
     android:allowBackup="false"
     android:icon="@mipmap/ic_launcher"
     android:label="@string/app_name"
+    android:name=".WakeUpApplication"
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/AppTheme"
     tools:ignore="AllowBackup">
+    <activity android:name=".controller.LoginActivity">
+    </activity>
     <activity
       android:label="@string/app_name"
       android:name=".controller.MainActivity"
