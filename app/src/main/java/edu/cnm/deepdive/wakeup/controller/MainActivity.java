@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     fab.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-        Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+        Snackbar.make(view, "Add a task!!", Snackbar.LENGTH_LONG)
             .setAction("Action", null).show();
       }
     });
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     // Passing each menu ID as a set of Ids because each
     // menu should be considered as top level destinations.
     mAppBarConfiguration = new AppBarConfiguration.Builder(
-        R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
+        R.id.nav_home, R.id.nav_todo, R.id.nav_weather, R.id.nav_activities, R.id.nav_calendar)
         .setDrawerLayout(drawer)
         .build();
     NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
