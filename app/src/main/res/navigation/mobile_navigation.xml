@@ -35,5 +35,11 @@
     android:name="edu.cnm.deepdive.wakeup.controller.ui.calendar.CalendarFragment"
     tools:layout="@layout/fragment_calendar"/>
 
+  <fragment
+    android:id="@+id/nav_settings"
+    android:label="@string/menu_settings"
+    android:name="edu.cnm.deepdive.wakeup.controller.ui.settings.SettingsFragment"
+    tools:layout="@layout/fragment_settings"/>
+
 
 </navigation>
