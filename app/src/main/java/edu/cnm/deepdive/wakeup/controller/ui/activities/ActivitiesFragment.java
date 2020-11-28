@@ -21,7 +21,7 @@ public class ActivitiesFragment extends Fragment {
     activitiesViewModel =
         ViewModelProviders.of(this).get(ActivitiesViewModel.class);
     View root = inflater.inflate(R.layout.fragment_activities, container, false);
-    final TextView textView = root.findViewById(R.id.text_activities);
+    final TextView textView = root.findViewById(R.id.activities_list_view);
     activitiesViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
       @Override
       public void onChanged(@Nullable String s) {
