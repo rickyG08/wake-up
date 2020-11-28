@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import edu.cnm.deepdive.wakeup.R;
+import edu.cnm.deepdive.wakeup.databinding.FragmentActivitiesBinding;
 
 public class ActivitiesFragment extends Fragment {
 
