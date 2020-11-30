@@ -5,30 +5,27 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  tools:context=".controller.LoginActivity">
+  tools:context=".controller.ui.todo.TodoFragment">
 
-  <com.google.android.gms.common.SignInButton
-    android:id="@+id/sign_in"
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/todo_list"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:padding="8dp"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintBottom_toBottomOf="@id/wakeup_logo"
+    app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintVertical_bias="0.2"/>
+    app:layout_constraintBottom_toTopOf="@+id/add_button"
+    app:layout_constraintVertical_bias="0.3">
 
-
-  <ImageView
-    android:id="@+id/wakeup_logo"
+  </androidx.recyclerview.widget.RecyclerView>
+  <Button
+    android:id="@+id/add_button"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:src="@drawable/wakeup"
-    app:layout_constraintTop_toBottomOf="@id/sign_in"
+    android:text="@string/add_task"
+    app:layout_constraintTop_toBottomOf="@+id/todo_list"
+    app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintBottom_toBottomOf="parent"/>
-
-
+    app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
