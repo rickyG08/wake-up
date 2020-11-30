@@ -38,8 +38,9 @@ public class MainActivity extends AppCompatActivity {
     fab.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-        Snackbar.make(view, "Add a task!!", Snackbar.LENGTH_LONG)
-            .setAction("Undo", undoOnClickListener).show();
+
+//        Snackbar.make(view, "Add a task!!", Snackbar.LENGTH_LONG)
+//            .setAction("Undo", undoOnClickListener).show();
       }
     });
 

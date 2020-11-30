@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: "androidx.navigation.safeargs"
 
 static def getProperty(String filename, String property) {
-    Properties properties  = new Properties()
+    Properties properties = new Properties()
     properties.load(new FileInputStream(filename))
     return properties.getProperty(property)
 }
@@ -81,7 +81,7 @@ dependencies {
     implementation "androidx.room:room-rxjava2:$room_version"
 
     // Lifecycle dependencies
-    def lifecycle_version ='2.2.0'
+    def lifecycle_version = '2.2.0'
     implementation "androidx.lifecycle:lifecycle-runtime:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
@@ -91,6 +91,9 @@ dependencies {
     implementation 'com.google.android.gms:play-services-auth:19.0.0'
 
     // Google calendar dependencies
+    implementation 'com.google.api-client:google-api-client:1.23.0'
+    implementation 'com.google.oauth-client:google-oauth-client-jetty:1.23.0'
+    implementation 'com.google.apis:google-api-services-calendar:v3-rev305-1.23.0'
 
     // Retrofit (REST client) with ReactiveX & Gson integration
     def retrofit_version = '2.9.0'
