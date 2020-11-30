@@ -9,7 +9,7 @@ import androidx.room.PrimaryKey;
 import java.util.Date;
 
 /**
- * This is the {@code }
+ * This entity class holds the data for the database for the todo.
  */
 @Entity(
     indices = {
@@ -47,14 +47,14 @@ public class Todo {
   private Date calendarDate;
 
   /**
-   * Returns the the todo id.
+   * Returns the auto-generated id of the todo.
    */
   public long getTodoId() {
     return todoId;
   }
 
   /**
-   * Set the
+   * Set the auto-generated id.
    * @param todoId
    */
   public void setTodoId(long todoId) {
