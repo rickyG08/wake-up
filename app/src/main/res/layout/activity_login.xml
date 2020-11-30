@@ -13,10 +13,22 @@
     android:layout_height="wrap_content"
     android:padding="8dp"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintBottom_toBottomOf="@id/wakeup_logo"
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintVertical_bias="0.4"/>
+    app:layout_constraintVertical_bias="0.2"/>
+
+
+  <ImageView
+    android:id="@+id/wakeup_logo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/wakeup"
+    app:layout_constraintTop_toBottomOf="@id/sign_in"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
