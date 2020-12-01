@@ -55,76 +55,75 @@ public class Todo {
 
   /**
    * Set the auto-generated id.
-   * @param todoId
+   * @param todoId  The id of the todo.
    */
   public void setTodoId(long todoId) {
     this.todoId = todoId;
   }
 
   /**
-   *
-   * @return
+   * Returns a boolean of the task.
    */
   public boolean isTask() {
     return task;
   }
 
   /**
-   *
-   * @param task
+   * Sets the task which is a boolean.
+   * @param task  The boolean task
    */
   public void setTask(boolean task) {
     this.task = task;
   }
 
   /**
-   *
-   * @return
+   * Returns the name of the task.
    */
   public String getTaskName() {
     return taskName;
   }
 
   /**
-   *
-   * @param taskName
+   * Sets the name of the task.
+   * @param taskName  The name of the task
    */
   public void setTaskName(String taskName) {
     this.taskName = taskName;
   }
 
   /**
-   *
-   * @return
+   * Returns the user id from the {@link User} entity class.
    */
   public long getUserId() {
     return userId;
   }
 
   /**
-   *
-   * @param userId
+   * Sets the id of the user from the {@link User}.
+   * @param userId  The id of the user
    */
   public void setUserId(long userId) {
     this.userId = userId;
   }
 
+  /**
+   * Returns the created Date of the task.
+   */
   @NonNull
   public Date getCreated() {
     return created;
   }
 
   /**
-   *
-   * @param created
+   * Sets the created Date of the task.
+   * @param created The Date of the task.
    */
   public void setCreated(@NonNull Date created) {
     this.created = created;
   }
 
   /**
-   *
-   * @return
+   * Returns the calendar Date of the task.
    */
   @NonNull
   public Date getCalendarDate() {
@@ -132,8 +131,8 @@ public class Todo {
   }
 
   /**
-   *
-   * @param calendarDate
+   * Sets the calendar Date of the task.
+   * @param calendarDate  The calendar Date of the task.
    */
   public void setCalendarDate(@NonNull Date calendarDate) {
     this.calendarDate = calendarDate;

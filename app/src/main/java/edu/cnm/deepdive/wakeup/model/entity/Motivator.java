@@ -8,7 +8,7 @@ import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
 /**
- *
+ * The entity class that holds the data for the database of the motivators.
  */
 @SuppressWarnings("NotNullFieldNotInitialized")
 @Entity(
@@ -42,15 +42,15 @@ public class Motivator {
   private String motivator;
 
   /**
-   * Returns the id of the motivator.
+   * Returns the id of the motivator which is auto-generated.
    */
   public long getMotivatorId() {
     return motivatorId;
   }
 
   /**
-   * Sets the
-   * @param motivatorId
+   * Sets the id of the motivator which is auto-generated.
+   * @param motivatorId The id of the motivator.
    */
   public void setMotivatorId(long motivatorId) {
     this.motivatorId = motivatorId;
@@ -79,8 +79,8 @@ public class Motivator {
   }
 
   /**
-   * Sets the ....
-   * @param userId
+   * Sets the id of the user from the {@link User}.
+   * @param userId  The id of the user
    */
   public void setUserId(long userId) {
     this.userId = userId;
@@ -95,8 +95,8 @@ public class Motivator {
   }
 
   /**
-   * Sets the motivator
-   * @param motivator
+   * Sets the motivator.
+   * @param motivator The motivator
    */
   public void setMotivator(@NonNull String motivator) {
     this.motivator = motivator;

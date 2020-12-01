@@ -58,7 +58,7 @@ public interface TodoDao {
   Single<Integer> delete(Todo... todos);
 
   /**
-   *
+   * Deletes multiple todos from the database.
    * @param todos
    * @return
    */
@@ -66,33 +66,32 @@ public interface TodoDao {
   Single<Integer> delete(Collection<Todo> todos);
 
   /**
-   *
-   * @param todo
-   * @return
+   * Updates a singe todo in the database.
+   * @param todo  The todo to be updated.
+   * @return  A Single that holds the updated todo.
    */
   @Update
   Single<Integer> update(Todo todo);
 
   /**
-   *
-   * @param todos
-   * @return
+   * Updates multiple todos in the database.
+   * @param todos The todos to be updated.
+   * @return A Single that holds the updated todos.
    */
   @Update
   Single<Integer> update(Todo... todos);
 
   /**
-   *
-   * @param todos
-   * @return
+   * Updates multiple todos in the database.
+   * @param todos The todos to be updated.
+   * @return A Single that holds the updated todos.
    */
   @Update
   Single<Integer> update(Collection<Todo> todos);
 
   /**
-   * A query that
-   * @param id
-   * @return
+   * A query that returns a todo from its id.
+   * @param id  The id of the todo.
    */
   @Query("SELECT * FROM Todo WHERE todo_id = :id")
   LiveData<Todo> selectTodo(long id);

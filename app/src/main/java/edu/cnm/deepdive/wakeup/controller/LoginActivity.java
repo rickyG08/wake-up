@@ -13,6 +13,10 @@ import edu.cnm.deepdive.wakeup.databinding.ActivityLoginBinding;
 import edu.cnm.deepdive.wakeup.service.GoogleSignInService;
 import edu.cnm.deepdive.wakeup.service.UserRepository;
 
+/**
+ * Presents a sign-in button which allows you to sign-in to Google. After a sucessful sign-in it
+ * takes you to {@link MainActivity}. User is not required to login.
+ */
 public class LoginActivity extends AppCompatActivity {
 
   private static final int LOGIN_REQUEST_CODE = 1000;
