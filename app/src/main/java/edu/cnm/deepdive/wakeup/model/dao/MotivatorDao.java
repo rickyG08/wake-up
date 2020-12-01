@@ -7,84 +7,84 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 import edu.cnm.deepdive.wakeup.model.entity.Motivator;
+import edu.cnm.deepdive.wakeup.model.entity.User;
 import io.reactivex.Single;
 import java.util.Collection;
 import java.util.List;
 
 /**
- *
+ * The interface which provides the data access objects of the {@link Motivator}.
  */
 @Dao
 public interface MotivatorDao {
 
   /**
-   * Add a single movitator
-   * @param motivator
-   * @return
+   * Inserts a single motivator into the database.
+   * @param motivator The motivator to be inserted.
+   * @return  A single of the motivator that was inserted.
    */
   @Insert
   Single<Long> insert(Motivator motivator);
 
   /**
-   *
-   * @param motivators
-   * @return
-   */
+   * Inserts multiple motivators to the database.
+   * @param motivators  The motivators to be inserted.
+   * @return  A Single holding a list of motivators that were inserted.   */
   @Insert
   Single<List<Long>> insert(Motivator... motivators);
 
   /**
-   *
-   * @param motivators
-   * @return
+   * Inserts multiple motivators to the database.
+   * @param motivators  The motivators to be inserted.
+   * @return  A Single holding a list of motivators that were inserted.
    */
   @Insert
   Single<List<Long>> insert(Collection<Motivator> motivators);
 
   /**
-   *
-   * @param motivator
-   * @return
+   * Updates a single motivator to the database.
+   * @param motivator The motivator to be updated.
+   * @return  A single that holds the updated motivator.
    */
   @Update
   Single<Integer> update(Motivator motivator);
 
   /**
-   *
-   * @param motivators
-   * @return
+   * Updates multiple motivators in the database.
+   * @param motivators  The motivators to be updated.
+   * @return  A Single that holds the updated motivators.
    */
   @Update
   Single<Integer> update(Motivator... motivators);
 
   /**
-   *
-   * @param motivators
-   * @return
+   * Updates multiple motivators in the database.
+   * @param motivators  The motivators to be updated.
+   * @return  A Single that holds the collection of motivators updated.
    */
   @Update
   Single<Integer> update(Collection<Motivator> motivators);
 
   /**
-   *
-   * @param motivator
-   * @return
+   * Deletes a single motivator from the database.
+   * @param motivator The motivator to be deleted.
+   * @return  A Single that holds the deleted motivator.
    */
   @Delete
   Single<Integer> delete(Motivator motivator);
 
   /**
-   *
-   * @param motivators
-   * @return
+   * Deletes multiple motivators from the database.
+   * @param motivators  The motivators to be deleted.
+   * @return  A Single that holds the deleted motivators.
    */
   @Delete
   Single<Integer> delete(Motivator... motivators);
 
   /**
-   *
-   * @param motivators
-   * @return
+   * Deletes multiple motivators from the database.
+   * @param motivators  The collection of motivators to be deleted.
+   * @return  A Single that holds the deleted collection of motivators.
    */
   @Delete
   Single<Integer> delete(Collection<Motivator> motivators);

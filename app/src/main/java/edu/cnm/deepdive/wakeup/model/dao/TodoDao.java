@@ -7,60 +7,61 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 import edu.cnm.deepdive.wakeup.model.entity.Todo;
+import edu.cnm.deepdive.wakeup.model.entity.User;
 import io.reactivex.Single;
 import java.util.Collection;
 import java.util.List;
 
 /**
- *
+ *   The interface which provides the data access objects of the {@link Todo}.
  */
 @Dao
 public interface TodoDao {
 
   /**
-   *
-   * @param todo
-   * @return
+   * Inserts a single todo into the database.
+   * @param todo  The todo to be inserted.
+   * @return  A Single of the todo that was inserted.
    */
   @Insert
   Single<Long> insert(Todo todo);
 
   /**
-   *
-   * @param todos
-   * @return
+   * Inserts multiple todos into the database.
+   * @param todos The todos to be inserted.
+   * @return  A Single holding a list of todos that were inserted.
    */
   @Insert
   Single<List<Long>> insert(Todo... todos);
 
   /**
-   *
-   * @param todos
-   * @return
+   * Inserts multiple todos into the database.
+   * @param todos The todos to be inserted.
+   * @return  A Single holding a list of todos that were inserted.
    */
   @Insert
   Single<List<Long>> insert(Collection<Todo> todos);
 
   /**
-   *
-   * @param todo
-   * @return
+   * Deletes a single todo from the database.
+   * @param todo  The todo to be deleted.
+   * @return  A Single which holds the todo that was deleted.
    */
   @Delete
   Single<Integer> delete(Todo todo);
 
   /**
-   *
-   * @param todos
-   * @return
+   * Deletes multiple todos from the database.
+   * @param todos The collection of todos to be deleted.
+   * @return  A Single that holds the deleted todos.
    */
   @Delete
   Single<Integer> delete(Todo... todos);
 
   /**
    * Deletes multiple todos from the database.
-   * @param todos
-   * @return
+   * @param todos The collection of todos to be deleted.
+   * @return  A Single that holds the deleted collection of todos.
    */
   @Delete
   Single<Integer> delete(Collection<Todo> todos);
@@ -84,7 +85,7 @@ public interface TodoDao {
   /**
    * Updates multiple todos in the database.
    * @param todos The todos to be updated.
-   * @return A Single that holds the updated todos.
+   * @return A Single that holds a collection of the updated todos.
    */
   @Update
   Single<Integer> update(Collection<Todo> todos);

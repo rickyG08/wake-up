@@ -7,6 +7,9 @@ import edu.cnm.deepdive.wakeup.model.entity.Todo;
 import io.reactivex.Completable;
 import java.util.List;
 
+/**
+ * The repository class that
+ */
 public class TodoRepository {
 
   private final Context context;
