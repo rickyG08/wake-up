@@ -1,6 +1,13 @@
 apply plugin: 'com.android.application'
 apply plugin: "androidx.navigation.safeargs"
 
+
+ext {
+    appName = 'Wake the F up!!!'
+    appNameSlug = 'wake-up'
+    baseUrl = 'https://rickyG08.github.io'
+}
+
 static def getProperty(String filename, String property) {
     Properties properties = new Properties()
     properties.load(new FileInputStream(filename))
@@ -21,8 +28,13 @@ android {
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
+        setProperty("archivesBaseName", appNameSlug)
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        resValue "string", "app_name", appName
+        resValue "string", "license_url", "${baseUrl}/${appNameSlug}/notice"
+        resValue "string", "instructions_url", "${baseUrl}/${appNameSlug}/instructions"
 
         def connection_properties = "$projectDir/../../../services/wakeup.properties"
 
@@ -89,6 +101,7 @@ dependencies {
 
     // Google Sign-in dependency
     implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.google.android.gms:play-services-oss-licenses:17.0.0'
 
     // Google calendar dependencies
     implementation 'com.google.api-client:google-api-client:1.23.0'
@@ -117,4 +130,33 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
 
+}
+android.applicationVariants.all { variant ->
+    task("generate${variant.name.capitalize()}Javadoc", type: Javadoc) {
+        def docTitle = "${appName} ${project.android.defaultConfig.versionName}"
+        def compileTask = variant.javaCompileProvider.get()
+        def androidLibJar = "${android.sdkDirectory}/platforms/${android.compileSdkVersion}/android.jar"
+        title docTitle
+        description "Generates Javadoc for $variant.name."
+        source = compileTask.source
+        destinationDir = file("${projectDir}/../docs/api")
+        doFirst {
+            classpath = files(compileTask.classpath.files) + files(androidLibJar)
+        }
+        options {
+            links 'https://docs.oracle.com/javase/8/docs/api/'
+            links 'http://reactivex.io/RxJava/javadoc/'
+            links 'https://javadoc.io/doc/io.reactivex.rxjava2/rxandroid/latest/'
+            links 'https://javadoc.io/doc/com.google.code.gson/gson/latest/'
+            links 'https://square.github.io/retrofit/2.x/retrofit/'
+            links 'https://square.github.io/okhttp/3.x/okhttp/'
+            links 'https://square.github.io/okhttp/3.x/logging-interceptor/'
+            links 'https://square.github.io/picasso/2.x/picasso/'
+            links 'https://javadoc.io/doc/com.facebook.stetho/stetho/latest/'
+            links 'https://commons.apache.org/proper/commons-csv/apidocs/'
+            linksOffline 'https://developer.android.com/reference', "${projectDir}/../link-offline/android"
+            linksOffline 'https://developers.google.com/android/reference', "${projectDir}/../link-offline/google"
+            windowTitle docTitle
+        }
+    }
 }
