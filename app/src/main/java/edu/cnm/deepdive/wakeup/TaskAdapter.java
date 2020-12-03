@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import edu.cnm.deepdive.wakeup.TaskAdapter.Holder;
 import edu.cnm.deepdive.wakeup.databinding.FragmentTodoBinding;
 import edu.cnm.deepdive.wakeup.model.entity.Todo;
+import java.util.ArrayList;
 import java.util.List;
 
 public class TaskAdapter extends RecyclerView.Adapter<Holder> {
@@ -18,10 +19,10 @@ public class TaskAdapter extends RecyclerView.Adapter<Holder> {
   private final List<Todo> tasks;
   private final OnClickListener listener;
 
-  public TaskAdapter(Context context, List<Todo> tasks,
+  public TaskAdapter(Context context,
       OnClickListener listener) {
     this.context = context;
-    this.tasks = tasks;
+    tasks = new ArrayList<>();
     inflater = LayoutInflater.from(context);
     this.listener = listener;
   }
@@ -36,6 +37,7 @@ public class TaskAdapter extends RecyclerView.Adapter<Holder> {
 
   @Override
   public void onBindViewHolder(@NonNull Holder holder, int position) {
+    holder.bind(position);
 
   }
 
@@ -55,7 +57,7 @@ public class TaskAdapter extends RecyclerView.Adapter<Holder> {
 
     private void bind(int position) {
       Todo todo = tasks.get(position);
-      bind.
+      binding.taskName.setText(position + 1);
     }
   }
 
