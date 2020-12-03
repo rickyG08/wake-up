@@ -2,6 +2,9 @@ package edu.cnm.deepdive.wakeup.service;
 
 import android.content.Context;
 
+/**
+ * Weather repository that gets the instance of {@link WebService} for weather.
+ */
 public class WeatherRepository {
 
   private final Context context;
@@ -11,6 +14,5 @@ public class WeatherRepository {
     this.context = context;
     webService = WebService.getInstance();
   }
-
 
 }

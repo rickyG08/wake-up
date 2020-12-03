@@ -20,6 +20,9 @@ import androidx.appcompat.widget.Toolbar;
 import edu.cnm.deepdive.wakeup.R;
 import java.util.ArrayList;
 
+/**
+ * The main activity that holds the business logic of the app.
+ */
 public class MainActivity extends AppCompatActivity {
 
   private AppBarConfiguration mAppBarConfiguration;

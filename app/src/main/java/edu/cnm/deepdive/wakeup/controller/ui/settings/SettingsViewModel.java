@@ -4,6 +4,9 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
+/**
+ * View model class for fragment
+ */
 public class SettingsViewModel extends ViewModel {
 
   private MutableLiveData<String> mText;

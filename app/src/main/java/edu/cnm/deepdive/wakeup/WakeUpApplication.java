@@ -6,6 +6,10 @@ import edu.cnm.deepdive.wakeup.service.GoogleSignInService;
 import edu.cnm.deepdive.wakeup.service.WakeUpDatabase;
 import io.reactivex.schedulers.Schedulers;
 
+/**
+ * The main application class that initializes the app, Google Sign-in service, Stetho and the WakeUp
+ * database.
+ */
 public class WakeUpApplication extends Application {
 
   // CHECK stetho now

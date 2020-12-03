@@ -15,6 +15,9 @@ import edu.cnm.deepdive.wakeup.model.entity.User;
 import edu.cnm.deepdive.wakeup.service.WakeUpDatabase.Converters;
 import java.util.Date;
 
+/**
+ * Abstract class that holds the database for the application and hold the type converters for dates.
+ */
 @Database(entities = {Todo.class, User.class, Motivator.class}, version = 1)
 @TypeConverters({Converters.class})
 public abstract class WakeUpDatabase extends RoomDatabase {
@@ -23,18 +26,34 @@ public abstract class WakeUpDatabase extends RoomDatabase {
 
   private static Application context;
 
+  /**
+   * The Application context for the database.
+   * @param context The context of the app
+   */
   public static void setContext(Application context) {
     WakeUpDatabase.context = context;
   }
 
+  /**
+   * Returns the instance of the database.
+   */
   public static WakeUpDatabase getInstance() {
     return InstanceHolder.INSTANCE;
   }
 
+  /**
+   * Returns the {@link MotivatorDao}
+   */
   public abstract MotivatorDao getMotivatorDao();
 
+  /**
+   * Returns the {@link TodoDao}
+   */
   public abstract TodoDao getTodoDao();
 
+  /**
+   * Returns the {@link UserDao}
+   */
   public abstract UserDao getUserDao();
 
   private static class InstanceHolder {
@@ -45,13 +64,25 @@ public abstract class WakeUpDatabase extends RoomDatabase {
 
   }
 
+  /**
+   * Converter class for date values.
+   */
   public static class Converters {
 
+    /**
+     * Returns a date into a Long
+     *
+     * @param value The value of the date
+     */
     @TypeConverter
     public static Long dateToLong(Date value) {
       return (value != null) ? value.getTime() : null;
     }
 
+    /**
+     * Returns a Long into a date.
+     * @param value The value of the Long
+     */
     @TypeConverter
     public static Date longToDate(Long value) {
       return (value != null) ? new Date(value) : null;

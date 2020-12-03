@@ -13,10 +13,20 @@ import androidx.lifecycle.ViewModelProvider;
 import edu.cnm.deepdive.wakeup.R;
 import org.jetbrains.annotations.NotNull;
 
+/**
+ * The fragment class of the home page.
+ */
 public class HomeFragment extends Fragment {
 
   private HomeViewModel homeViewModel;
 
+  /**
+   * Constructor that creates the binding and view model.
+   * @param inflater Layout inflater
+   * @param container View group container
+   * @param savedInstanceState The Bundle instance
+   * @return The inflated binding root.
+   */
   public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
       Bundle savedInstanceState) {
     homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);

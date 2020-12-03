@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.wakeup;
+package edu.cnm.deepdive.wakeup.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,12 +6,15 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import edu.cnm.deepdive.wakeup.TaskAdapter.Holder;
+import edu.cnm.deepdive.wakeup.adapter.TaskAdapter.Holder;
 import edu.cnm.deepdive.wakeup.databinding.FragmentTodoBinding;
 import edu.cnm.deepdive.wakeup.model.entity.Todo;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Adapter for the list of tasks.
+ */
 public class TaskAdapter extends RecyclerView.Adapter<Holder> {
 
   private final Context context;
@@ -19,6 +22,11 @@ public class TaskAdapter extends RecyclerView.Adapter<Holder> {
   private final List<Todo> tasks;
   private final OnClickListener listener;
 
+  /**
+   * Constructor for adapter
+   * @param context The context of the adapter
+   * @param listener The on click listener for the button
+   */
   public TaskAdapter(Context context,
       OnClickListener listener) {
     this.context = context;
@@ -46,6 +54,9 @@ public class TaskAdapter extends RecyclerView.Adapter<Holder> {
     return 0;
   }
 
+  /**
+   * Holder class to get the binding and the task list.
+   */
   public class Holder extends RecyclerView.ViewHolder {
 
     private final FragmentTodoBinding binding;

@@ -11,6 +11,9 @@ import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+/**
+ * Start of web service to get current weather in the app.
+ */
 public interface WebService {
 
   static WebService getInstance() {
@@ -21,6 +24,9 @@ public interface WebService {
 
     private static final WebService INSTANCE;
 
+    /**
+     * Gson builder that parses json.
+     */
     static {
       Gson gson = new GsonBuilder()
           .create();

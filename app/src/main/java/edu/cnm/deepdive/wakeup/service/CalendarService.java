@@ -23,6 +23,9 @@ import java.security.GeneralSecurityException;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Start of service class that gets the Google Calendar API for app.
+ */
 public class CalendarService {
 
   private static final String APPLICATION_NAME = "Google Calendar API Java Quickstart";

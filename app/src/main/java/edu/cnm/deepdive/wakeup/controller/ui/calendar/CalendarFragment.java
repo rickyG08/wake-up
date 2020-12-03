@@ -14,11 +14,21 @@ import androidx.lifecycle.ViewModelProviders;
 import edu.cnm.deepdive.wakeup.R;
 import edu.cnm.deepdive.wakeup.databinding.FragmentCalendarBinding;
 
+/**
+ * Calendar fragment class.
+ */
 public class CalendarFragment extends Fragment {
 
   private CalendarViewModel calendarViewModel;
   private FragmentCalendarBinding binding;
 
+  /**
+   * Constructor that creates the binding and view model.
+   * @param inflater Layout inflater
+   * @param container View group container
+   * @param savedInstanceState The Bundle instance
+   * @return The inflated binding root.
+   */
   public View onCreateView(@NonNull LayoutInflater inflater,
       ViewGroup container, Bundle savedInstanceState) {
    binding = FragmentCalendarBinding.inflate(inflater);
