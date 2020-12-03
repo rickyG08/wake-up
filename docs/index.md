@@ -1,3 +1,5 @@
+![WakeUp logo](img/wakeup.png)
+
 ## Summary
 
 "Wake the F up!!" also know as WakeUp helps the user function better after very little sleep. Helping you to focus and be productive for work, school or other important things you have going on. This app helps you get through the day to make sure you are productive and ready to go for anything you have going on. Throughout the day it can notify you with a little motivation to give you that extra push. When using the app users can select different tasks, activities and options that can be  personalized to ensure the best type of help to get you through the day.
