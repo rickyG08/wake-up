@@ -42,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
       @Override
       public void onClick(View view) {
 
-//        Snackbar.make(view, "Add a task!!", Snackbar.LENGTH_LONG)
+        Snackbar.make(view, "Add a task!!", Snackbar.LENGTH_LONG)
+            .setAction("Undo", null);
 //            .setAction("Undo", undoOnClickListener).show();
       }
     });

@@ -6,7 +6,7 @@
 
 * Graveyard shift workers.
 
-	> As someone who works night shifts, I needed help getting going in the mornings. I had no motivation to get things done around the house and was tired all day. After using the app I feel better and am motivated to finish my tasks.
+	> As someone who works night shifts, I needed help getting going in the mornings. I had no motivation to get things done around the house and was tired all day. After seeing the tasks I need to get done during the day, it helps me accomplish the things I forget to do.
 
 * People who are constantly tired and forgetful in the mornings.
 

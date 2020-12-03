@@ -1,0 +1,13 @@
+edu.cnm.deepdive.wakeup
+edu.cnm.deepdive.wakeup.adapter
+edu.cnm.deepdive.wakeup.controller
+edu.cnm.deepdive.wakeup.controller.ui.activities
+edu.cnm.deepdive.wakeup.controller.ui.calendar
+edu.cnm.deepdive.wakeup.controller.ui.home
+edu.cnm.deepdive.wakeup.controller.ui.settings
+edu.cnm.deepdive.wakeup.controller.ui.todo
+edu.cnm.deepdive.wakeup.controller.ui.weather
+edu.cnm.deepdive.wakeup.databinding
+edu.cnm.deepdive.wakeup.model.dao
+edu.cnm.deepdive.wakeup.model.entity
+edu.cnm.deepdive.wakeup.service
